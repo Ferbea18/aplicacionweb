@@ -1,0 +1,7 @@
+---
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: aplicionweb-asi9318
+  name: aplicacionweb-asi9318
+  memory: 64M
+  stack: cflinuxfs2
