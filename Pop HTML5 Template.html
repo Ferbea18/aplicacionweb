@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///X:/Users/ALVARO/Downloads/POP%20PRUEBAS/2097_pop/calculadora.html -->
+<html lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pop HTML5 Template</title>
+<!--
+
+Template 2097 Pop
+
+http://www.tooplate.com/view/2097-pop
+
+-->
+    <!-- load CSS -->
+    <link rel="stylesheet" href="./Pop HTML5 Template_files/css">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="./Pop HTML5 Template_files/bootstrap.min.css">                                  <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="./Pop HTML5 Template_files/fontawesome-all.min.css">                <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" type="text/css" href="./Pop HTML5 Template_files/slick.css">                       <!-- http://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" type="text/css" href="./Pop HTML5 Template_files/slick-theme.css">
+    <link rel="stylesheet" href="./Pop HTML5 Template_files/tooplate-style.css">                               <!-- Templatemo style -->
+
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.");</script>
+    
+</head>
+
+<body>
+    <div id="tm-bg"></div>
+    <div id="tm-wrap">
+        <div class="tm-main-content">
+            <div class="container tm-site-header-container">
+                <div class="row">
+                    
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="content">
+                              <form name="calculator">
+    <h3>Calculadora</h3>
+    <p>Haz algun calculo para ver el resultado.</p>
+    <input type="textfield" name="ans" value="">
+    <br>
+    <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+    <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+    <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+    <input type="button" value="+" onClick="document.calculator.ans.value+='+'">
+    <br>
+    <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+    <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+    <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+    <input type="button" value="-" onClick="document.calculator.ans.value+='-'">
+    <br>
+    <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+    <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+    <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+    <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+    <br>
+    <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+    <input type="reset" value="c">
+    <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
+    <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+    </form>
+	<h3><a href="index.html">VOLVER</a></h3>
+                        </div>                       
+                    </div>
+                </div>                
+            </div>
+            <footer>
+                <p class="small tm-copyright-text">Copyright © <span class="tm-current-year">2020</span> URJC. 
+                
+                Todos los derechos reservados</p>
+            </footer>
+        </div> <!-- .tm-main-content -->  
+    <div class="details">
+			<div class="details__bg details__bg--down" style="opacity: 0; transform: none;">
+				<button class="details__close" style="opacity: 0; transform: translateY(100%);"><i class="fas fa-2x fa-times icon--cross tm-fa-close"></i></button>
+				<div class="details__description" style="opacity: 0;"></div>
+			</div>						
+			</div></div>
+    <!-- load JS -->
+    <script src="./Pop HTML5 Template_files/jquery-3.2.1.slim.min.js.descarga"></script>         <!-- https://jquery.com/ -->    
+    <script src="./Pop HTML5 Template_files/slick.min.js.descarga"></script>                  <!-- http://kenwheeler.github.io/slick/ -->  
+    <script src="./Pop HTML5 Template_files/anime.min.js.descarga"></script>                     <!-- http://animejs.com/ -->
+    <script src="./Pop HTML5 Template_files/main.js.descarga"></script>  
+    <script>      
+
+        function setupFooter() {
+            var pageHeight = $('.tm-site-header-container').height() + $('footer').height() + 100;
+
+            var main = $('.tm-main-content');
+
+            if($(window).height() < pageHeight) {
+                main.addClass('tm-footer-relative');
+            }
+            else {
+                main.removeClass('tm-footer-relative');   
+            }
+        }
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            setupFooter();
+
+            $(window).resize(function(){
+                setupFooter();
+            });
+
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+
+</body></html>
